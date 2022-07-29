@@ -7,6 +7,14 @@ jpgFolderDirectory = Path('YOUR_FOLDER_DIRECTORY_WITH_ALL_YOUR_IMAGES')
 ### Find all .jpg files in directory ###
 jpgFolder = jpgFolderDirectory.glob('*.jpg')
 
+### Main function for iteration over images in folder ###
+def main():
+    count = -1
+    folder_num = 1
+    ### Takes each image and checks directory to sort into ###
+    for jpgImage in jpgFolder:
+        check_directory(folder_num, count, jpgImage)
+
 def check_directory(folder_num, count, jpgImage):
     ### Naming convention for your subfolders ###
     NewFolderName = str(folder_num-1) + "K - " + str(folder_num) + "K"
@@ -44,9 +52,8 @@ def check_directory(folder_num, count, jpgImage):
         check_directory(folder_num, count, jpgImage)
 
 
-### Main ###
-count = -1
-folder_num = 1
-for jpgImage in jpgFolder:
-    check_directory(folder_num, count, jpgImage)
+### Statement allows you to run file either as reusable module or standalone programs ###
+if __name__ == "__main__":
+    main()
+
 
