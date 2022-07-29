@@ -3,7 +3,7 @@ from pathlib import Path
 ### Choose how many images you want per folder ###
 MAX_IMAGES_PER_FOLDER = 1000
 
-jpgFolderDirectory = Path('YOUR_FOLDER_DIRECTORY_WITH_ALL_YOUR_IMAGES')
+jpgFolderDirectory = Path('FOLDER_DIRECTORY_WITH_ALL_YOUR_IMAGES')
 ### Find all .jpg files in directory ###
 jpgFolder = jpgFolderDirectory.glob('*.jpg')
 
