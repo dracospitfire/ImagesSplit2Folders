@@ -44,7 +44,7 @@ def check_directory(folder_num, count, jpgImage):
         check_directory(folder_num, count, jpgImage)
 
 
-### Main loop that calls function ###
+### Main ###
 count = -1
 folder_num = 1
 for jpgImage in jpgFolder:
