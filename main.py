@@ -56,4 +56,3 @@ def check_directory(folder_num, count, jpgImage):
 if __name__ == "__main__":
     main()
 
-
