@@ -1,5 +1,5 @@
 '''
-====================================================
+=====================================================
              ImagesSplit2Folders.py
 =       Created by Austin Flores on 7/21/22         =
        All rights reservied by dracospitfire
